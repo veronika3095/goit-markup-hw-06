@@ -971,7 +971,14 @@ input:checked+label>span {
    .address:focus {
        color: #404bbf;
    }
-
+  .title-class { 
+    width: 496px;
+    font-size: 56px;
+    line-height: 107%;
+  }
+  .darc-bg  { 
+    padding: 112px 0;
+  }
   .title-span-web { 
     margin-right: 120px;
   }
@@ -1050,6 +1057,9 @@ input:checked+label>span {
     .address {
       font-size: 16px;
       line-height: 150%;
+    }
+    .darc-bg {
+     padding: 188px 0;
     }
     .icons { 
     display: flex;
