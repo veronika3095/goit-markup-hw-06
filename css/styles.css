@@ -152,9 +152,12 @@ height: 100%;
 position:fixed;
 top:0;
 background-color: #fff;
-/* visibility: hidden;
+padding: 72px 16px 24px 16px;
+display: flex;
+flex-direction: column;
+visibility: hidden;
 opacity: 0;
-pointer-events: none; */
+pointer-events: none;
 }
 
 .end-menu { 
@@ -177,9 +180,12 @@ border-radius: 4px;
 }
 
 .mob-list { 
-    margin-left: 16px;
-    margin-top: 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: auto;
 }
+
 
 .mob-link { 
     font-family: "Roboto", sans-serif;
@@ -188,11 +194,16 @@ border-radius: 4px;
     line-height: 111%;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding: 24px 0;
+   
     display: flex;
     gap: 40px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.mob-link-mob { 
+    color: #404bbf;
+}
+
 
 .mob-address { 
 font-family: "Roboto", sans-serif;
@@ -202,18 +213,23 @@ font-family: "Roboto", sans-serif;
     line-height: 120%;
     letter-spacing: 0.02em;
     color: #4d5ae5;
-    margin-left: auto;
+    
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
-    gap:48px;
+   
 }
 
+.address-mob { 
+color: #434455;
+
+}
 
 .mob-address-list { 
-    
-    margin-left: 16px;
-    margin-top: 168px;
-}  
+margin-bottom:48px;
+display: flex;
+flex-direction: column;
+gap: 24px;
+}
 
 .mob-address:hover,
 .mob-address:focus {
@@ -223,7 +239,7 @@ font-family: "Roboto", sans-serif;
 .mob-icons-footer-ul { 
     display: flex;
     gap: 40px;
-    padding: 0 20px;
+    
     margin-top: 46px;
  }
 
@@ -455,6 +471,7 @@ h2 {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
+     margin-left: 10px;  
 }
 
 .images {
@@ -1054,6 +1071,10 @@ input:checked+label>span {
     width: 768px;
     }
 
+    .mob-menu { 
+        display: none;
+    }
+
     .nav-list {
      display: flex;
      gap: 40px;
@@ -1157,6 +1178,7 @@ input:checked+label>span {
 
    .link { 
     width: calc((100% - 64px) / 2);
+    margin-left: 0;
    }
    .images-class { 
     width: 356px;
